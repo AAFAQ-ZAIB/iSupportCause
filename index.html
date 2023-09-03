@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Profile Picture Compaign - iSupportcause</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ------------- Header section starts from here ----------- -->
+    <nav style="position: fixed; background-color: #ffffff; z-index: 1;">
+        <div class="Header-main">
+            <div class="Header">
+                <div class="Header-inner">
+                    <div class="Container" style="max-width: 1400px;">
+
+
+                        <div class="topnav">
+                            <!-- <a href="#home" class="active">Logo</a> -->
+                            <div id="myLinks">
+                                <ul class="Toggle-main" style="overflow-y: scroll;">
+                                    <li class="mini-nav"><div style="display: flex; justify-content: end; width: 142px;"><i class="fa fa-list-alt" aria-hidden="true" id="Campaigns" style="font-size: 22px; line-height: 22px; height: 22px"><a id="Menu-txt-1">Campaigns</a></i></div>
+                                        <a class="Hidden-menu-2">
+                                         <div class="arrow-down" onclick="myFunctions()">
+                                        </a>
+                                        </div></li>
+                                    <ul class="Second-hidden-menu" id="secondlink" style="overflow-y: scroll;">
+                                        <li class="Hidden-menu-item"><a>Animal Welfare</a></li>
+                                        <li class="Hidden-menu-item"><a>Awareness</a></li>
+                                        <li class="Hidden-menu-item"><a>Cause</a></li>
+                                        <li class="Hidden-menu-item"><a>Charity</a></li>
+                                        <li class="Hidden-menu-item"><a>Cultural</a></li>
+                                        <li class="Hidden-menu-item"><a>Education</a></li>
+                                        <li class="Hidden-menu-item"><a>Entertainment</a></li>
+                                        <li class="Hidden-menu-item"><a>Events</a></li>
+                                        <li class="Hidden-menu-item"><a>Human Rights</a></li>
+                                        <li class="Hidden-menu-item"><a>International Days</a></li>
+                                        <li class="Hidden-menu-item"><a>National Days</a></li>
+                                        <li class="Hidden-menu-item"><a>Other</a></li>
+                                        <li class="Hidden-menu-item"><a>Peace Campaign</a></li>
+                                        <li class="Hidden-menu-item"><a>Political</a></li>
+                                        <li class="Hidden-menu-item"><a>Sports</a></li>
+                                        <li class="Hidden-menu-item"><a>Support</a></li>
+                                    </ul>
+                                    <li><i class="fa fa-info-circle" id="How-works" style="font-size: 18.85px; height: 22px; margin-top: 2px;"><a id="Menu-txt-2">How it works</a></i></li>
+                                    <li id="Money"><i class="fa-regular fa-money-bill-1" style="font-size: 21px; height: 22px; width: 24.5px; margin-top: 1px;"></i><a id="Menu-txt-3">Pricing</a></i></li>
+                                    <li class="Slide-btn-i" id="Btn-slide"><button class="Slide-btn" id="Inner-btn"><a class="Slide-btn-inner" id="Inner-most-l">LOGIN</a></button></li>
+                                </ul>
+
+
+                              <!-- <a href="#">News</a>
+                              <a href="#">Contact</a>
+                              <a href="#">About</a> -->
+                            </div>
+                            <a class="icon" onclick="myFunction()">
+                              <i class="fa fa-bars" style="color: #4479e9; font-weight: 300; font-size: 22px;"></i>
+                            </a>
+                          </div>
+
+
+
+
+                        <div class="Header-logo-div">
+                            <a href="#"><img src="/Pictures/logo.png" alt="Logo" class="Header-logo"></a>
+                        </div>
+                        <div class="Header-menu-div">
+                            <div class="Header-menu">
+                                <ul class="Header-menu-list"> 
+                                    <li class="Header-menu-item" id="First-item"><a class="Menu-inner-most">Explore Campaigns 
+                                        <div class="Menu-down-icon">
+                                        <img src="/Pictures/down icon.png" width="10px" height="6px">
+                                        </div>
+                                    </a></li>
+                                    <li class="Header-menu-item"><a class="Menu-inner-most"></a>How it works</li>
+                                    <li class="Header-menu-item" style="display: flex; justify-content: flex-start; width: 47.28px;"><a class="Menu-inner-most"></a>Pricing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="Header-btn-div">
+                            <div class="Header-btn-right-div">
+                                <button class="Header-btn-right">Login</button>
+                            </div>
+                            <button class="Header-left-btn">Create a Campaign</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Line">
+        </div>
+    </nav>
+    <!-- ----------------- Header section ends ---------------- -->
+
+    <!-- ------------------- Section 1 starts from here---------------- -->
+    <section class="Sec-1">
+        <div class="Sec-1-inner">
+        <div class="Front-pic-main">
+            <div class="Front-pic-inner">
+                <div class="Pic-new" style="max-width: 1400px; display: flex; justify-content: center;">
+                <h1 class="Front-heading">
+                    A social awareness fundraising platform.
+                    <br>
+                    Built for
+                    <span style="color:#FD0066">diversity</span>.
+                    Built for
+                    <span style="color:#FD0066">momentum</span>.
+                    Built for
+                    <span style="color:#FD0066">change</span>.
+                </h1>
+                </div>
+            </div>
+        </div>
+        <div class="Mix-pics">
+            <img src="/Pictures/ISC_HomePage_Image.png" alt="Home" width="100%" height="228px">
+        </div>
+    </div>
+    </section>
+     <!-- ----------------- Section 1 ends here---------------- -->
+
+     <!-- --------------------- section 2 starts from here ---------------- -->
+     <section style="display: flex; justify-content: center;">
+         <div class="Colored-line-div" style="max-width: 1400px;">
+            <div class="Colored-line"></div>
+         </div>
+     </section>
+     <!-- -------------------------- Section 2 ends here ----------------------  -->
+
+     <!-- --------------------- Section 3 starts from here -------------------- -->
+     <section style="display: flex; justify-content: center;">
+         <div class="FC-main" style="max-width: 1400px;">
+            <article class="Article-1">
+                <div class="FC-heading-div">
+                    <div class="Featured-div">
+                    <h2 class="FC-heading">Featured Campaigns</h2>
+                    </div>
+                </div>
+                <div class="FC-row-div">
+                    <div class="FC-row-inner">
+                        <div class="FC-arrow" style="z-index: 9999;">
+                            <a class="Previous-btn" id="Previous" onclick="handleMove('prev')" style="text-decoration: none; list-style-type: none;">
+                            <div class="FC-arrow-inner">
+                                <i class="fas fa-chevron-left" style="font-size: 3em; display: inline-block;"></i>
+                                <!-- <i class="fa fa-5x fa-angle-left" style="font-size: 5em; display: inline-block; font: normal normal normal 14px/1 FontAwesome;"></i> -->
+                            </div>
+                            </a>
+                        </div>
+                        <div class="FC-data-row" id="Slider">
+
+
+
+                            
+                            <div class="FC-row-1">
+                                <div class="FC-row-inner-1">
+
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <img loading="lazy" class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1530920717887.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">International Essential Oils <br> Day</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex">
+                                   <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                   </div>
+                                    <span class="FC-sub-heading-txt">&nbsp1724 Supporters</span>
+                                </div>
+                            </div>
+                            <div class="FC-row-1" id="FC-fourth-last-row">
+                                <div class="FC-row-inner-1">
+
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1526937340345.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Red Sneakers for Oakley</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp638 Supporters</span>
+                                </div>
+                            </div>
+                            <div class="FC-row-1" id="FC-third-last-row">
+                                <div class="FC-row-inner-1">
+
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1524562944270.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Fatality Free Friday</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp145 Supporters</span>
+                                </div>
+                            </div>
+                            <div class="FC-row-1" id="FC-second-last-row">
+                                <div class="FC-row-inner-1">
+
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1523465895907.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Do It Scared® with Ruth Soukup</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp237 Supporters</span>
+                                </div>
+                            </div>
+                            
+
+
+
+
+
+                            
+                            <div class="FC-row-1" id="FC-last-row">
+                                <div class="FC-row-inner-1">
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1518122870392.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Healogics Heart Health Month</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp10 Supporters</span>
+                                </div>
+                            </div>
+
+                            <div class="FC-row-1" id="FC-extra-row">
+                                <div class="FC-row-inner-1">
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <!-- <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1518122870392.png"> -->
+                                        <img loading="lazy" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1517423967756.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Healogics Heart Health Month</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp10 Supporters</span>
+                                </div>
+                            </div>
+
+                            <div class="FC-row-1" id="FC-extra-row-1">
+                                <div class="FC-row-inner-1">
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <!-- <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1518122870392.png"> -->
+                                        <img loading="lazy" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1513792208668.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Healogics Heart Health Month</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp10 Supporters</span>
+                                </div>
+                            </div>
+
+                            <div class="FC-row-1" id="FC-extra-row-2">
+                                <div class="FC-row-inner-1">
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <!-- <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1518122870392.png"> -->
+                                        <img loading="lazy" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1512889917109.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Healogics Heart Health Month</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp10 Supporters</span>
+                                </div>
+                            </div>
+                            
+
+
+
+
+
+
+
+
+                            
+                            <div class="FC-row-1" id="FC-extra-row-3">
+                                <div class="FC-row-inner-1">
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <!-- <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1518122870392.png"> -->
+                                        <img loading="lazy" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1513267674136.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Healogics Heart Health Month</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp10 Supporters</span>
+                                </div>
+                            </div>
+
+                            <div class="FC-row-1" id="FC-extra-row-4">
+                                <div class="FC-row-inner-1">
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <!-- <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1518122870392.png"> -->
+                                        <img loading="lazy" style="width:205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1512225059181.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Healogics Heart Health Month</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp10 Supporters</span>
+                                </div>
+                            </div>
+
+                            <div class="FC-row-1" id="FC-extra-row-5">
+                                <div class="FC-row-inner-1">
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <!-- <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1518122870392.png"> -->
+                                        <img loading="lazy" style="width:205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1507693167192.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Healogics Heart Health Month</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp10 Supporters</span>
+                                </div>
+                            </div>
+
+                            <div class="FC-row-1" id="FC-extra-row-6">
+                                <div class="FC-row-inner-1">
+                                </div>
+                                <div  class="FC-row-inner-2">
+                                    <div class="Row-inner-2-1">
+                                        <!-- <img loading="lazy"class="image-1" style="width: 205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1518122870392.png"> -->
+                                        <img loading="lazy" style="width:205px; height: auto;" src="https://s3.ap-south-1.amazonaws.com/isupportcause/uploads/overlay/isupportimg_1507556640289.png">
+                                    </div>
+                                </div>
+                                <div class="FC-row-inner-3">
+                                    <h2 class="FC-row-heading">Healogics Heart Health Month</h2>
+                                </div>
+                                <div class="FC-row-sub-heading" style="width: 205px; display: flex;">
+                                    <div style="width: 12.9268292683%;">
+                                    <img src="/Pictures/thumb icon.png" width="20px" height="19.33px">
+                                    </div>
+                                    <span class="FC-sub-heading-txt">&nbsp10 Supporters</span>
+                                </div>
+                            </div>
+                        
+
+
+
+
+
+                        </div>
+                        <div class="FC-arrow" style="z-index: 9999;">
+                            <a class="Next-btn" id="Next" onclick="handleMove('next')" style="text-decoration: none; list-style-type: none;">
+                            <div class="FC-arrow-inner">
+                                <i class="fas fa-chevron-right" style="font-size: 3em; display: inline-block;"></i>
+                                <!-- <i class="fa fa-5x fa-angle-right" style="font-size: 5em; display: inline-block; font: normal normal normal 14px/1 FontAwesome;"></i> -->
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="FC-btn-div">
+                <button class="FC-btn">Explore our campaigns</button>
+            </div>
+         </div>
+     </section>
+
+      <!-- ------------------------------- Section 3 ends -------------------------- -->
+
+       <!-- ---------------------- Section 4 starts from here ----------------------- -->
+       <section style="display: flex; justify-content: center;">
+        <div class="Colored-line-div" style="margin-top: 100px; max-width: 1400px;">
+           <div class="Colored-line" style="background: linear-gradient(90deg, green 0%, #39ff14 100%);"></div>
+        </div>
+    </section>
+    <!-- -------------------------- Section 4 ends here ----------------------  -->
+
+     <!-- ---------------------- Section 5 starts from here ----------------------- -->
+
+        <section style="display: flex; justify-content: center;">
+            <div class="Campaign-outer" style="max-width: 1400px;">
+            <div class="Campaign-main">
+                <div class="C-para-1"  id="C-heading-1">
+                    <p style="margin: 0px;">Campaign &amp; Funding Options</p>
+                </div>
+                <div class="C-para-1">
+                    <p style="margin: 0px;">Get Started in Less Than 5 Minutes</p>
+                </div>
+                <div class="C-para-2">
+                    <p class="C-para-3">iSupportCause provides you a few campaign types to select from and makes it easy for you to get you up and running quickly, letting you concentrate on your social cause</p>
+                </div>
+                <div class="C-col-main"> 
+                    <div class="C-col-inner">
+                        <div class="C-col-inner-h">
+                            <h3 class="C-col-heading">Fundraisers</h3>
+                        </div>
+                        <div class="C-col-inner-t">
+                            <p class="C-col-txt">Create a fundraising campaign and start collecting funds for your cause through your Stripe account.</p>
+                        </div>
+                        <div class="C-col-inner-p" id="Inner-p-4">
+                            <div class="C-col-picture-div">
+                                <img class="C-col-picture" src="/Pictures/fund raise icon.png" width="70px" height="84px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="C-col-inner" id="C-second">
+                        <div class="C-col-inner-h">
+                            <h3 class="C-col-heading">Pledges</h3>
+                        </div>
+                        <div class="C-col-inner-t">
+                            <p class="C-col-txt">Create a pledge campaign to gather support for your cause. Pledge supporters can help make your campaign go viral by posting to their social media.</p>
+                        </div>
+                        <div class="C-col-inner-p" id="Inner-p-1" style="background: linear-gradient(90deg, green 0%, #39ff14 100%)">
+                            <div class="C-col-picture-div">
+                                <img class="C-col-picture" src="/Pictures/pledges icon.png" width="70px" height="70px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="C-col-inner" id="C-third">
+                        <div class="C-col-inner-h">
+                            <h3 class="C-col-heading">Petitions</h3>
+                        </div>
+                        <div class="C-col-inner-t">
+                            <p class="C-col-txt">Petitions allow you to gather signatures for your cause, which can then be shared and posted to social media by the signatories.</p>
+                        </div>
+                        <div class="C-col-inner-p" id="Inner-p-2" style="background: linear-gradient(90deg, purple 0%, magenta 100%)">
+                            <div class="C-col-picture-div">
+                                <img class="C-col-picture" src="/Pictures/petitions icon.png" width="70px" height="70px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="C-col-inner"  id="C-fourth">
+                        <div class="C-col-inner-h">
+                            <h3 class="C-col-heading" id="Profile-txt">Profile Pic Campaigns</h3>
+                        </div>
+                        <div class="C-col-inner-t">
+                            <p class="C-col-txt">Profile picture overlays is a fun and viral way for your supporters to put their own picture inside of your custom-designed overlay.</p>
+                        </div>
+                        <div class="C-col-inner-p" id="Inner-p-3" style="background: linear-gradient(90deg, #0000a3 0%, #4675ff 100%)">
+                            <div class="C-col-picture-div">
+                                <img class="C-col-picture" src="/Pictures/profile icon.png" width="70px" height="70px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+     <!-- -------------------------- Section 5 ends here ----------------------  -->
+
+     <!-- ---------------------- Section 6 starts from here ----------------------- -->
+        <section>
+            <div class="Message-main-div">
+                <div class="Message-inner-div" style="max-width: 1400px;">
+                    <h1 class="Message-h1">A Message of Unity from Our Founders</h1>
+                    <div class="Message-txt-div">
+                    <p class="Message-txt-1">
+                        Forged from an unlikely partnership between an Indian and a Pakistani, iSupportCause was created by us in hopes of providing a platform to foster change in a world that can be unpredictable and turbulent. The core mission for iSupportCause is to encourage positive change and enable those who envision a better future to reach a greater audience. We applaud those who work tirelessly to provide a more just world for all of us, and we hope that iSupportCause can be a catalys to your success, furthering your cause to reach more supporters!
+                    </p>
+                    </div>
+                    <div class="Message-last-div">
+                        <p class="Message-last">- Waqas Qadeer and Zia Islam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+     <!-- -------------------------- Section 5 ends here ----------------------  -->
+
+     <!-- ---------------------- Section 6 starts from here ----------------------- -->
+     <section style="display: flex; justify-content: center;">
+        <div class="Colored-line-div" style="margin-top: 100px; max-width: 1400px;">
+           <div class="Colored-line" style="background: linear-gradient(90deg, #0000a3 0%, #4675ff 100%);"></div>
+        </div>
+    </section>
+    <!-- -------------------------- Section 6 ends here ----------------------  -->
+
+    <!-- ---------------------- Section 7 starts from here ----------------------- -->
+    <section style="display: flex; justify-content: center;">
+        <div class="Partners" style="max-width: 1400px;">
+            <div class="Parterns-inner">
+                <div class="Partner-h1-div">
+                    <p class="Partner-h1">iSupportCause is Loved by</p>
+                </div>
+                <div class="Partner-h2-div">
+                    <p class="Partner-h1" id="Org">These Organizations</p>
+                </div>
+                <div class="Partner-txt-div">
+                    <p class="Partner-txt">
+                        Over 700,000+ supporters have used iSupportCause to advocate for various social causes and campaigns. Thousands of non-profit, NGOs and corporate organizations are using iSupportCause daily to launch new campaigns, gather supporters, and raise awareness.
+                    </p>
+                </div>
+                <div class="Logos-main-div">
+                    <div class="Logo-div">
+                        <img id="Logo-1" src="/Pictures/cancer.png" width="180px" height="108px">
+                    </div>
+                    <div class="Logo-div">
+                        <img id="Logo-2" src="/Pictures/coca cola.png" width="231px" height="75px">
+                    </div>
+                    <div class="Logo-div">
+                        <img id="Logo-3" src="/Pictures/statendepartment.png" width="118px" height="118px">
+                    </div>
+                    <div class="Logo-div">
+                        <img id="Logo-4" src="/Pictures/pangolin.png" width="133px" height="153px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------- Section 7 ends here ----------------------  -->
+
+    <!-- ------------ Footer starts from here ------------------ -->
+    <section>
+        <div class="Footer-main">
+            <div class="Footer-inner" style="max-width: 1400px;">
+                <div class="Footer-main-menu">
+
+                    <div class="Extra-1">
+                    <div class="Footer-log">
+                        <img src="/Pictures/transparent white logo.svg" width="134px" height="112px">
+                    </div>
+                    <div class="footer-menu-1">
+                        <ul class="Footer-col-1">
+                            <li class="Col-1-item" id="Col-1-i"><a class="Menu-1-a">Campaigns</a></li>
+                            <li class="Col-1-item" id="Col-2-i"><a class="Menu-1-a">How it Works</a></li>
+                            <li class="Col-1-item" id="Col-3-i"><a class="Menu-1-a">About</a></li>
+                            <li class="Col-1-item" id="Col-4-i"><a class="Menu-1-a">Contact Us</a></li>
+                            <li class="Col-1-item" id="Col-5-i"><a class="Menu-1-a">Subscriptions</a></li>
+                        </ul>
+                    </div>
+                    </div>
+
+
+                    <div class="Extra">
+                    <div class="footer-menu-2">
+                        <ul class="Footer-col-1">
+                            <li class="Col-1-item" id="Col-6-i"><a class="Menu-1-a">Animal Welfare</a></li>
+                            <li class="Col-1-item" id="Col-7-i"><a class="Menu-1-a">Awareness</a></li>
+                            <li class="Col-1-item" id="Col-8-i"><a class="Menu-1-a">Cause</a></li>
+                            <li class="Col-1-item" id="Col-9-i"><a class="Menu-1-a">Charity</a></li>
+                            <li class="Col-1-item" id="Col-10-i"><a class="Menu-1-a">Cultural</a></li>
+                            <li class="Col-1-item" id="Col-11-i"><a class="Menu-1-a">Education</a></li>
+                            <li class="Col-1-item" id="Col-12-i"><a class="Menu-1-a">Entertainment</a></li>
+                            <li class="Col-1-item" id="Col-13-i"><a class="Menu-1-a">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-3">
+                        <li class="Col-1-item"><a class="Menu-1-a">Human Rights</a></li>
+                            <li class="Col-1-item" id="Col-14-i"><a class="Menu-1-a">International Days</a></li>
+                            <li class="Col-1-item" id="Col-15-i"><a class="Menu-1-a">National Days</a></li>
+                            <li class="Col-1-item" id="Col-16-i"><a class="Menu-1-a">Other</a></li>
+                            <li class="Col-1-item" id="Col-17-i"><a class="Menu-1-a">Peace Campaign</a></li>
+                            <li class="Col-1-item" id="Col-18-i"><a class="Menu-1-a">Political</a></li>
+                            <li class="Col-1-item" id="Col-19-i"><a class="Menu-1-a">Sports</a></li>
+                            <li class="Col-1-item" id="Col-20-i"><a class="Menu-1-a">Support</a></li>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="line-upper">
+                <div class="Footer-line">
+
+                </div>
+                </div>
+                <div class="Footer-copy">
+                    <div class="Social-main">
+                        <a class="Social-inner"><i class="fab fa-facebook-f" style="font-size: 15px; line-height: 16px; font-weight: 300;"></i></i></a>
+                        <a class="Social-inner" id="twitter"><i class="fab fa-twitter fa-sm" style="font-size: 14px; line-height: 14px;"></i></a>
+                        <a class="Social-inner"><i class="fab fa-instagram fa-sm" style="font-size: 15.5px; line-height: 21px;"></i></a>
+                    </div>
+                    <div class="Copy-right">
+                        <span class="F-copy"><span id="Last-one">© Copyright iSupportCause, All Rights Reserved </span><span id="Last-two"> | Privacy Policy | </span><span id="Last-three"> Terms and Conditions</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------ Footer ends here ------------------ -->
+
+
+    <script>
+
+
+const parentScroll = document.querySelector(".FC-data-row")
+let currentWidth = window.innerWidth < 788 ? "sm" : "md"
+window.addEventListener("resize",(e)=>{
+    currentWidth = window.innerWidth < 788 ? "sm" : "md"
+    
+})
+    const handleMove = (position)=>{
+        parentScroll.addEventListener("scroll",(e)=>{
+            console.log(currentWidth)
+       console.log(e.target.scrollLeft)
+        //  console.log(e.target.clientWidth)
+        
+        })
+        switch(position){
+case "prev":
+parentScroll.scrollBy({left:currentWidth === "sm" ? -446 :-766,behavior:"smooth"})
+break;
+case "next":
+parentScroll.scrollBy({left:currentWidth === "sm" ? 446 :766,behavior:"smooth"})
+break;
+default:
+        }
+console.log(position)
+    }
+
+
+
+        function myFunction() {
+
+          var x = document.getElementById("myLinks");
+
+          if (x.style.visibility === "visible") {
+            
+
+                    document.getElementById("myLinks").style.transform = "translate(-100%, 0%)";
+                    document.getElementById("myLinks").style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+                    x.style.visibility = "hidden";
+            //  x.style.opacity = 1;
+          } else {                                      
+            x.style.visibility = "visible";
+            x.style.opacity = 1;
+
+                    document.getElementById("myLinks").style.transform = "translate(0%, 0%)";
+                    // document.getElementById("myLinks").style.transform = "none";
+                    document.getElementById("myLinks").style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+          }
+        }
+        //   if(x.style.visibility == "visible")
+        //         {
+        //             document.getElementById("myLinks").style.transform = "translate(0%, 0%)";
+        //             // document.getElementById("myLinks").style.transform = "none";
+        //             document.getElementById("myLinks").style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+        //         }
+        //         else{
+        //             document.getElementById("myLinks").style.transform = "translate(-100%, 0%)";
+        //             document.getElementById("myLinks").style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+        //         }
+        
+
+        // function myTransition(){
+        //     if(document.getElementById("myLinks").style.display === "block"){
+        //     document.getElementById("myLinks").removeAttribute("transform");
+        //     }
+
+        // }
+
+        function myFunctions() {
+          var x = document.getElementById("secondlink");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+
+        //  document.addEventListener('mouseup', function(e) {
+        //  let container = document.getElementById('myLinks');
+        //  if (container.contains(e.target)) {
+        //  container.style.display = 'none';
+        //  }
+        //  });
+
+        window.addEventListener('mouseup', function(event){
+	var box = document.getElementById('myLinks');
+	if (event.target == box || event.target.parentNode == box){
+        box.style.display = 'none';
+    }
+});
+
+
+
+ 
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+    function plusSlides(n) {  
+
+        showSlides(slideIndex += n + 3);
+    }
+
+
+    //     function showSlides(n) {
+    //   var i;
+    //   var slides = document.getElementsByClassName("FC-row-1");
+        
+    //   if (n > slides.length) {slideIndex = 1}    
+    //   if (n < 1) {slideIndex = slides.length}
+    //   for (i = 0; i < slides.length; i++) {
+    //       slides[i].style.display = "none";
+          
+    //         // slides[slideIndex-1].style.transform = "translate(-100%, 0%)";
+    //         // slides[slideIndex-1].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";  
+
+    //         // slides[slideIndex-1 + 1].style.transform = "translate(-100%, 0%)";
+    //         // slides[slideIndex-1 + 1].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)"; 
+
+    //         // slides[slideIndex-1 + 2].style.transform = "translate(-100%, 0%)";
+    //         // slides[slideIndex-1 + 2].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //         // slides[slideIndex-1 + 3].style.transform = "translate(-100%, 0%)";
+    //         // slides[slideIndex-1 + 3].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";  
+    //   }
+    //      slides[slideIndex-1 - 4].style.display = "block";  
+    //         slides[slideIndex-1 - 4].style.transform = "translate(-100%, 0%)";
+    //         slides[slideIndex-1 - 4].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";  
+
+    //       slides[slideIndex-1].style.display = "block";  
+    //          slides[slideIndex-1].style.transform = "translate(-100%, 0%)";
+    //          slides[slideIndex-1].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)"; 
+
+    //       slides[slideIndex-1 + 1].style.display = "block";
+    //          slides[slideIndex-1 + 1].style.transform = "translate(-100%, 0%)";
+    //          slides[slideIndex-1 + 1].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //      slides[slideIndex-1 + 2].style.display = "block";
+    //         slides[slideIndex-1 + 2].style.transform = "translate(-100%, 0%)";
+    //         slides[slideIndex-1 + 2].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //      slides[slideIndex-1 + 3].style.display = "block";
+    //         slides[slideIndex-1 + 3].style.transform = "translate(-100%, 0%)";
+    //         slides[slideIndex-1 + 3].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //     // slides[slideIndex-1 + 5].style.display = "block";
+    //     //     slides[slideIndex-1 + 5].style.transform = "translate(-100%, 0%)";
+    //     //     slides[slideIndex-1 + 5].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //     // slides[slideIndex-1 + 6].style.display = "block";
+    //     //     slides[slideIndex-1 + 6].style.transform = "translate(-100%, 0%)";
+    //     //     slides[slideIndex-1 + 6].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //     // slides[slideIndex-1 + 7].style.display = "block";
+    //     //     slides[slideIndex-1 + 7].style.transform = "translate(-100%, 0%)";
+    //     //     slides[slideIndex-1 + 7].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //     // slides[slideIndex-1 + 8].style.display = "block";
+    //     //     slides[slideIndex-1 + 8].style.transform = "translate(-100%, 0%)";
+    //     //     slides[slideIndex-1 + 8].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //     // slides[slideIndex-1 + 9].style.display = "block";
+    //     //     slides[slideIndex-1 + 9].style.transform = "translate(-100%, 0%)";
+    //     //     slides[slideIndex-1 + 9].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //     // slides[slideIndex-1 + 10].style.display = "block";
+    //     //     slides[slideIndex-1 + 10].style.transform = "translate(-100%, 0%)";
+    //     //     slides[slideIndex-1 + 10].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+    //     // slides[slideIndex-1 + 11].style.display = "block";
+    //     //     slides[slideIndex-1 + 11].style.transform = "translate(-100%, 0%)";
+    //     //     slides[slideIndex-1 + 11].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+    //     //   slides[slideIndex-1].className += " active";
+    // }
+
+
+
+
+
+    //      showSlides(slideIndex += n /*+ 3*/);
+    // }
+
+
+    
+    // function currentSlide(n) {
+    //    showSlides(slideIndex = n);
+    // }
+    function showSlides(n) {
+     
+        
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          
+            // slides[slideIndex-1].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";  
+
+            // slides[slideIndex-1 + 1].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 1].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)"; 
+
+            // slides[slideIndex-1 + 2].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 2].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+            // slides[slideIndex-1 + 3].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 3].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";  
+      }
+         slides[slideIndex-1].style.display = "block";  
+            // slides[slideIndex-1].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)"; 
+
+         slides[slideIndex-1 + 1].style.display = "block";  
+            // slides[slideIndex-1 + 1].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 1].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)"; 
+
+         slides[slideIndex-1 + 2].style.display = "block";
+            // slides[slideIndex-1 + 2].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 2].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+         slides[slideIndex-1 + 3].style.display = "block";
+            // slides[slideIndex-1 + 3].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 3].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+         slides[slideIndex-1 + 4].style.display = "block";
+            // slides[slideIndex-1 + 4].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 4].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+        slides[slideIndex-1 + 5].style.display = "none";
+            // slides[slideIndex-1 + 5].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 5].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+        slides[slideIndex-1 + 6].style.display = "none";
+            // slides[slideIndex-1 + 6].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 6].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+        slides[slideIndex-1 + 7].style.display = "none";
+            // slides[slideIndex-1 + 7].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 7].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+        slides[slideIndex-1 + 8].style.display = "none";
+            // slides[slideIndex-1 + 8].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 8].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+        slides[slideIndex-1 + 9].style.display = "none";
+            // slides[slideIndex-1 + 9].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 9].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+        slides[slideIndex-1 + 10].style.display = "none";
+            // slides[slideIndex-1 + 10].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 10].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+
+        slides[slideIndex-1 + 11].style.display = "none";
+            // slides[slideIndex-1 + 11].style.transform = "translate(-100%, 0%)";
+            // slides[slideIndex-1 + 11].style.transition = "transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)";
+        //   slides[slideIndex-1].className += " active";
+    }
+  
+
+        </script>
+</body>
+</html>
+
